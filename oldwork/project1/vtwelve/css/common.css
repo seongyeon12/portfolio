@@ -1,0 +1,507 @@
+@charset "UTF-8";
+@import url(reset.css);
+@import url(font.css);
+
+body {color: #222;}
+[class $= "inner"] {
+  width: 1200px;
+  margin: auto;
+}
+
+/*공용*/
+
+.aqua {
+  color: #26c2a6;
+}
+
+P {
+  letter-spacing: -0.5px;
+  line-height: 20px;
+}
+
+h2 {
+  color: #26c2a6;
+}
+/*헤더*/
+
+/*#header {}*/
+.header-menu {
+  position: fixed;
+  z-index: 1;
+  background: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  
+}
+
+.header-inner {
+  display: flex;
+  padding-top: 20px;
+  justify-content: space-between;
+  line-height: 80px;
+  height: 80px;
+  transition: all 0.3s;
+}
+.header-inner .logo:hover {
+  opacity: 0.8
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+}
+
+.gnb {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+
+.gnb li {
+}
+.gnb li:not(:last-child) {
+  padding-right: 20px;
+}
+.gnb li a {
+  display: block;
+  position: relative;
+}
+.gnb li a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  width: 0px;
+  height: 3px;
+  background: #26c2a6;
+  transition: all 0.5s;
+}
+
+.gnb li a:hover,
+.gnb li a:hover::after {
+  color: #26c2a6;
+  width: 100%;
+}
+
+.quick-menu {
+  display: flex;
+}
+.quick-menu a {
+  margin-right: 10px;
+  transition: all 0.3s;
+}
+.quick-menu a:hover {
+  color: #26c2a6;
+}
+
+
+#visual {
+  position: relative;
+  width: auto;
+  height: 750px;
+  background: url(../img/bg2.png) no-repeat center / cover;
+}
+
+#visual .visual-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  
+}
+#visual .visual-text h1 {
+  font-size: 15vw;
+  text-shadow: 20px 20px 5px rgba(0, 0, 0, 0.1);
+}
+#visual .visual-text h3 {
+  font-size: 4vw;
+  color: #C4C4C4;
+}
+
+/*메인*/
+#main {
+  padding-top: 100px;
+}
+
+/*섹션1 (인트로)*/
+#main #intro {
+  text-align: center;
+}
+#main .intro-inner {}
+#main .intro-inner h2 {
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  font-size: 36px;
+}
+#main .intro-inner p {
+  padding-top: 50px;
+  text-align: justify;
+}
+
+/*섹션2 (룩북)*/
+#lookbook {
+  margin-top: 50px;
+  background: #000000;
+}
+#lookbook .lookbook-inner {
+  height: 1100px;
+  padding-top: 50px;
+  text-align: center;
+}
+#lookbook .lookbook-inner h2 {
+  font-size: 36px;
+  color: #ffffff;
+}
+#lookbook .lookbook-inner h3 {
+  color: #C4C4C4;
+  font-size: 24px;
+}
+
+#lookbook .img-box-1 {
+  position: relative;
+  margin-top: 50px;
+  width: 99.9999%;
+  height: 900px;
+  background: #333;
+}
+
+#lookbook .img-box-1 [class ^= "lookbook"] {
+  background: no-repeat center / cover;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+#lookbook .img-box-1 [class ^= "lookbook"]:hover {
+  opacity: 1;
+}
+
+#lookbook .img-box-1 .lookbook-img-1 {
+  float: left;
+  width: 66.6666%;
+  height: 550px; 
+  background-image: url(../img/img52.png);
+}
+
+#lookbook .img-box-1 .lookbook-img-2 {
+  float: left;
+  width: 33.3333%;
+  height: 350px; 
+  background-image: url(../img/img49.png);
+}
+#lookbook .img-box-1 .lookbook-img-3 {
+  float: left;
+  width: 33.3333%;
+  height: 550px;
+  background-image: url(../img/img50.png);
+}
+#lookbook .img-box-1 .lookbook-img-4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 33.3333%;
+  height: 350px;
+  background-image: url(../img/img1.png);
+  
+}
+#lookbook .img-box-1 .lookbook-img-5 {
+  position: absolute;
+  bottom: 0;
+  left: 33.3333%;
+  width: 33.3333%;
+  height: 350px;
+  background: url(../img/img51.png) no-repeat top / cover;
+}
+
+/*섹션3 (인포메이션)*/
+#information {
+  padding-top: 50px;
+  text-align: center;
+}
+#information .information-inner {}
+#information .information-inner h2 {
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  font-size: 36px;
+}
+
+.information-list {
+  padding-top: 50px;
+  display: flex;
+}
+.information-list article {
+  width: 30%;
+}
+.information-list article:not(:first-child) {
+  margin-left: 5%;
+}
+.information-list article img {
+  width: 45%;
+}
+.information-list article h3 {
+  padding-top: 50px;
+  font-size: 24px;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+.information-list article p {
+  padding-top: 25px;
+  text-align: justify;
+}
+
+/*.information-list .premium {}
+.information-list .trendy {}
+.information-list .sporty {}*/
+
+/*섹션4 (민텍스트) */
+#min-text {
+  position: relative;
+  margin-top: 50px;
+  width: 100%;
+  height: 200px;
+  background: url(../img/img52.png) no-repeat center/ cover fixed;
+}
+.min-text-inner {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.min-text-inner p {
+  color: #fff;
+  font-size: xxx-large;
+}
+.min-text-inner em {
+  display: block;
+  margin-top: 5px;
+  color: #C4C4C4;
+  font-size: xx-large;
+}
+
+/*섹션5 (스톡키스트)*/
+
+#stockist {
+  padding: 50px 0 50px 0;
+}
+
+.stockist-inner {}
+.stockist-title {
+  text-align: center;
+}
+.stockist-title h2 {
+  font-size: 36px;
+}
+.stockist-title h3 {
+  color: #C4C4C4;
+  font-size: 24px;
+}
+
+
+
+/*.stockist-top {}*/
+
+.stockist-inner .input {
+  display: flex;
+  padding: 50px 0 5px 0;
+  border-bottom: 3px solid #000;
+  width: 30%;
+}
+
+.stockist-inner .input i {}
+.stockist-inner .input p {
+  color: #7D7D7D;
+  margin-left: 10px;
+}
+
+.stockist-top .total {
+  padding: 50px 0 5px 0;
+}
+
+.stockist-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stockist-list {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 450px;
+  overflow: scroll;
+  overflow-x: hidden;
+  
+}
+.stockist-list::-webkit-scrollbar {
+  display: block;
+  width: 5px; 
+  border-radius: 3px;
+  background-color: #C4C4C4;
+  
+}
+.stockist-list::-webkit-scrollbar-thumb {
+  background-color: #7D7D7D;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+.stockist-list::-webkit-scrollbar-thumb:hover {
+  background: #26c2a6;
+}
+.stockist-list article {
+  width: 95%;
+}
+.stockist-list article:not(:first-child) {
+  padding-top: 30px;
+}
+.stockist-list article:not(:last-child) {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #C4C4C4;
+}
+.stockist-list img {
+  width: 100%;
+  border-radius: 3px;
+}
+.stockist-list h4 {
+  margin-top: 25px;
+}
+.stockist-list p {
+  margin-top: 10px;
+  color: #7D7D7D;
+}
+.stockist-list .btn {
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+.stockist-list .btn:hover {
+  background: #26c2a6;
+}
+
+.stockist-bottom .map {
+  width: 65%;
+  height: 450px;
+}
+.stockist-bottom .map iframe {
+  width: 100%; height: 100%;
+}
+
+/*푸터*/
+#footer {
+  background: #000;
+  color: #ddd;
+  padding-bottom: 50px;
+}
+#footer .footer-inner {
+  padding-top: 50px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-top img {
+  width: 312px;
+  height: 82px;
+}
+.footer-top ul {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-top ul li {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-top ul li:not(:first-child) {
+  margin-left: 30px;
+}
+.footer-top ul li p {
+  padding-bottom: 10px;
+}
+.footer-top ul li a {
+  margin-top: 10px;
+  color: #7D7D7D;
+  transition: all 0.3s;
+}
+
+.footer-top ul li a:hover {
+  color: #ddd;
+}
+
+.footer-top .sns {
+  font-size: 36px;
+  color: #7D7D7D;
+}
+
+.footer-top .sns:hover {
+  color: #ddd;
+}
+
+.footer-top .sns li {
+  
+}
+.footer-top .sns li a {
+  
+}
+
+.footer-bottom {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-bottom .customer {}
+.footer-bottom .customer h3 {
+  font-size: 24px;
+}
+.footer-bottom .customer p {
+  padding-top: 25px;
+}
+
+.footer-bottom .company {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-bottom .company img {
+  margin-left: 25px;
+  width: 41px;
+  height: 41px;
+}
+.footer-bottom .company p {
+  padding-left: 25px;
+}
+
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+  [class $= "inner"] {
+    width: 90%;
+    margin: auto;
+  }
+  .header-inner {
+    display: block;
+    padding-top: 40px;
+  }
+  .header-inner .logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  } 
+  
+  .menu {
+     justify-content: flex-end;
+  }
+  .gnb {
+    width: 90%;
+  }
+  .stockist-top .total {
+    padding-top: 25px;
+}
+  .footer-top img {
+    display: none;
+  }
+}
