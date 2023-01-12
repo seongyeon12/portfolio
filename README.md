@@ -1,10 +1,10 @@
-# 포트폴리오
+# Portfolio
 ## 목차 
 - teamproject (팀 프로젝트 결과물)
 - assignment (과제)
 - oldwork (이전 프로젝트들)
 
-## 팀 프로젝트
+## Team Project 팀 프로젝트
 
 원본 팀프로젝트 깃허브 링크
 - https://github.com/minji99710/devgram-frontend 
@@ -58,9 +58,7 @@
 |Security|Spring-Security|
 |Package-management|gradle|
 
-팀원 및 참고 자료
-
-팀원
+### 팀원 및 참고 자료
 
 ## [각 기능별 구성담당]
 
@@ -207,7 +205,7 @@
 
 ---
 
-### 과제
+### Assignment 과제
 
 ## JS
 주제 
@@ -227,7 +225,7 @@
 - WAI-ARIA의 role, 스크린리더 사용자를 배려한 마크업
 - 웹표준과 웹접근성을 준수하며 검색 엔진 최적화를 위한 시멘틱한 마크업 복습
 
-### 이전 프로젝트
+### Old Work 이전 프로젝트
 
 기간 
 - 2022년 5월쯤 완성 
