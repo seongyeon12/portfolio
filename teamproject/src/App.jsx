@@ -1,4 +1,3 @@
-import React, { createContext, useContext, useState } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { Routes, Route } from "react-router-dom";
@@ -13,7 +12,7 @@ import FeedMainPage from "@pages/Feed/main/FeedMainPage";
 
 /* 마이페이지 */
 import MyPage from "@pages/mypage/MyPage";
-import MyPageReview from "@pages/mypage/MyPageReview";
+import MypageMyReview from "@pages/mypage/MypageMyReview";
 import MyPageFeed from "@pages/mypage/MyPageFeed";
 import MyPageLike from "@pages/mypage/MyPageLike";
 import MypageUserFeed from "@pages/mypage/MypageUserFeed";
@@ -44,7 +43,7 @@ function App() {
                         {/* 마이페이지 */}
                         <Route path="/my" element={<MyPage 
                         />} />
-                        <Route path="/my/review" element={<MyPageReview />} />
+                        <Route path="/my/review" element={<MypageMyReview />} />
                         <Route path="/my/feed" element={<MyPageFeed />} />
                         <Route path="/my/like" element={<MyPageLike />} />
                         <Route
