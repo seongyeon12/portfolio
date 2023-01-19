@@ -1,7 +1,6 @@
 import { ChevronRightIcon, ChevronLeftIcon, XMarkIcon, NoSymbolIcon, StarIcon } from '@heroicons/react/24/solid'
-import { useState } from 'react'
 
-export default function PhotoModal({length, Open, starLength, title, userid, day, review, count, num}) {
+export default function PhotoModal({length, Open, starLength, userid, day, review, count, num}) {
   const starLimit = Math.ceil(starLength) 
 
   const stars = [
@@ -25,7 +24,6 @@ export default function PhotoModal({length, Open, starLength, title, userid, day
   }
 
   /* 별점 관리 */
-  /* function  */
 
   return (
     <>

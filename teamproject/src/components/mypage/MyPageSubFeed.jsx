@@ -1,12 +1,15 @@
 import { useState } from 'react'
-import feedImg from '@image/feedImg.jpg'
 
-export default function MypageSubFeed({img}) {
+export default function MypageSubFeed() {
   const itemStyle = `
+  min-h-[150px]
   basis-[30%] 
-  grow bg-red-800 
+  grow 
+  bg-feedImg-img 
+  bg-cover
   min-h-[150px] 
   rounded-[5px] 
+  bg-no-repeat
   overflow-hidden
   flex-1 
   drop-shadow-md 
@@ -17,7 +20,6 @@ export default function MypageSubFeed({img}) {
   return (
     <>
       <li className={itemStyle} >
-        <img src={img === null ? feedImg : img} alt='피드이미지' />
       </li>
   </>
   )

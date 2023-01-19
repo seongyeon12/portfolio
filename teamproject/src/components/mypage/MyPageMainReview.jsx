@@ -1,7 +1,7 @@
 import tw from "tailwind-styled-components"
 import { StarIcon } from '@heroicons/react/24/solid'
 
-export default function MainReview({title, star, review, name}) {
+export default function MyPageMainReview({title, star, review, name}) {
   const Item = tw.li`
   min-h-[150px]
   items-center
@@ -38,7 +38,7 @@ export default function MainReview({title, star, review, name}) {
       <div className="rating mt-3 mb-1.5 text-sm">
           {stars}
       </div>
-      <p>{review && review.length > 200 ? `${review.substring(0, 200)}···` : review}</p>
+      <p>{review && review.length > 100 ? `${review.substring(0, 100)}···` : review}</p>
     </Item>
     </>
   )

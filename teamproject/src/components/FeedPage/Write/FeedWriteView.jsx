@@ -84,7 +84,7 @@ export default function FeedWriteView() {
         
         fetchData().then(res => setproducts(res));
     }, []);
-    console.log(fileImg)
+    
   return (
     <dlv>
     {modalOpen || EquiModal ? <div className="fixed w-full h-full bg-black z-40 opacity-70"></div> : null}

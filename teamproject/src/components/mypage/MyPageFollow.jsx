@@ -8,7 +8,7 @@ export default function MypageFollow({name}) {
   items-center
   `
 
-  const ImgStyle = `w-24 h-24 bg-blue-600 rounded-full mr-5`
+  const ImgStyle = `w-24 h-24 bg-blue-600 rounded-full mr-5 bg-keyboard-img bg-cover bg-no-repeat`
   const BtnStyle = `btn w-24 h-12 rounded-full hover:bg-point-blue hover:border-point-blue hover:text-white`
 
   return (

@@ -1,12 +1,14 @@
 import tw from "tailwind-styled-components"
 import image from "../../image/keyboard.jpg"
 
-export default function MypageGoods({title = null}) {
+export default function MypageGoods() {
   const Item = tw.li`
   min-h-[150px]
   items-center
   rounded-[5px]
-  bg-red-800
+  bg-keyboard-img
+  bg-cover
+  bg-no-repeat
   basis-[30%]
   grow
   overflow-hidden
@@ -14,12 +16,7 @@ export default function MypageGoods({title = null}) {
   shadow-black
   `
 
-  /*   
-  bg-feed-img
-  bg-cover 
-  */
-
   return (
-    <Item><img src={image}></img></Item>
+    <Item></Item>
   )
 }

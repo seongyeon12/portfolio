@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 
 import Navigation from "@components/mainpage/header/Navigation"
 import ProductsDetailIntro from "@components/products/detail/ProductsDetailIntro"
-import ProductsDetailPhoto from "@components/products/detail/ProductsDetailPhoto"
 import PhotoModal from "@components/products/detail/modal/PhotoModal"
 import ProductsDetailReview from "@components/products/detail/ProductsDetailReview"
 
@@ -30,7 +29,7 @@ export default function ProductsDatailView() {
         
         fetchData().then(res => setProducts(res));
     }, []);
-    console.log(reviewNum)
+
   useEffect(() => {
 		const fetchData = async() => {
           const res = await fetch(`http://localhost:3001/review`);
@@ -44,7 +43,6 @@ export default function ProductsDatailView() {
   let matchedItem = products.find(element => 
       element.id === Number(params.id)
     );
-    console.log(reviews[reviewNum])
 
   return (
     <>

@@ -6,7 +6,7 @@ import MypageSubFeed from '@components/mypage/MyPageSubFeed'
 import Load from '@image/Load.png'
 import MypageTitle from '@components/mypage/MyPageTitle';
 
-export default function MypageMyFeed() {
+export default function MypageFeed() {
   const [feed, setFeed] = useState([])
   const [target, setTarget] = useState(null);
   const [targetOn, setTargetOn] = useState(false);
