@@ -24,10 +24,10 @@
 
 프로젝트를 진행하며 배운 점 
 - JWT 토큰 기반의 로그인 구현
-- Context API를 활용한 상태 관리
-- json server를 활용한 Mock Server 활용
-- JS로 구현했던 Intersection observer를 리액트로 구현하는 법
-- 리액트의 컴포넌트, 훅 등의 개념을 실사용하며 실전에서의 이해를 높힘
+- React.js로 마이페이지 전반, 피드/상품 상세 화면 구현
+- json server를 이용한 Mock Server로 가짜 REST API 활용 후 백엔드 API 연동
+- Intersection observer를 사용한 무한스크롤 구현
+- 와이어프레임 제작
 
 ### 와이어프레임 초안
 
