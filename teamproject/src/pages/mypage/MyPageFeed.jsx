@@ -31,21 +31,6 @@ export default function MypageFeed() {
   <Btn onClick={handlerBtn}>취소</Btn>
   ]
   
-  // 데이터 페칭 함수
-  //http://52.194.161.226:8080/api/boards?page=${page}
-  // let page = 0;
-/*   const fetchData = async () => {
-    const response = await fetch(`http://52.194.161.226:8080/api/boards?page=${page}`);
-    const data = await response.json();
-    const data2 = await data.content
-    console.log(data2, "D")
-    if (data2.length === 0) {
-      setTargetOn(true)
-    } else {
-      setFeed((prev) => prev.concat(data2));
-      /* page++; */
-/*     }
-  };  */
   const fetchData = async () => {
     const response = await fetch(`http://localhost:3001/product`);
     const data = await response.json();
@@ -101,7 +86,7 @@ export default function MypageFeed() {
         if (!btnClick) {
           return
         }
-/*         console.log(btnClick, "tt") */
+
         liFeeds[i].addEventListener('click', function() {
           /* 삭제할 피드 toggle */
           if (deleteArr.includes(liFeeds[i].id)) {
