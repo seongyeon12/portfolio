@@ -97,7 +97,7 @@ export default function MyPage() {
           </div>
 
           <div className='나머지'>
-            <button className='btn'><Link to="/my/userFeed">다른 유저피드</Link></button>
+            {/* <button className='btn'><Link to="/my/userFeed">다른 유저피드</Link></button> */}
             <button className='btn'><Link to="/my/follow">팔로잉 페이지</Link></button>
           </div>
         </div>
