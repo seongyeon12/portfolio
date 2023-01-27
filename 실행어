@@ -1,0 +1,19 @@
+vite
+npm run dev
+json
+json-server --watch dbMy.json --port 3001
+서버
+npm start 
+
+마이페이지
+메인 -> 위부터 아래 -> 반응형
+
+상품페이지 
+url 바뀌는 부분 -> 버튼 -> 페이지네이션
+
+작성페이지 
+토글 -> 필수질문 -> 보내기
+
+로그인
+토큰 받 -> 토큰 삭제
+

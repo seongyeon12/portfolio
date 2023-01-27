@@ -52,13 +52,13 @@ export default function FeedWriteView() {
   const [tagList, settagList] = useState([])
 
   function handlerModalBtn() {
-    /* if (!target1 && !target2) {
+    if (!target1 && !target2) {
       alert("필수질문을 모두 작성해주세요.")
     }
     else {
       setModalOpen(!modalOpen)
-    } */
-    setModalOpen(!modalOpen)
+    }
+    /* setModalOpen(!modalOpen) */
   }
 
   /* 태그 보내는 함수 */

@@ -5,7 +5,8 @@ import { useEffect } from 'react';
 
 export default function FeedWriteFile({title, mandatory = false, guide, name, value, explain, target, setfileImg}) {
   const [open, setOpen] = useState(false);
-  const [preview, setPreview] = useState([])
+  // 삭제 x
+  /* const [preview, setPreview] = useState([]) */
 
   const [imgInput, setImgInput] = useState(false)
   const [textInput, setTextInput] = useState(false)
