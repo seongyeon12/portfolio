@@ -31,8 +31,6 @@ export default function MypageReview({title, name, imgList = null, star, day, re
     }
   }
 
-  console.log(StarIcon)
-
   return (
     <>
       <div className="mt-6">
