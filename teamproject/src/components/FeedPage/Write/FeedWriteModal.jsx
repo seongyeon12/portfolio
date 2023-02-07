@@ -44,7 +44,6 @@ export default function FeedWriteModal({setModalOpen, file}) {
       },
       data: formData,
     });
-    /* location.reload() */
   }
 
   return (

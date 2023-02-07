@@ -58,7 +58,6 @@ export default function FeedWriteView() {
     else {
       setModalOpen(!modalOpen)
     }
-    /* setModalOpen(!modalOpen) */
   }
 
   /* 태그 보내는 함수 */

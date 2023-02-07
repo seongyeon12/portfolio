@@ -1,6 +1,5 @@
 import { ChevronDownIcon } from '@heroicons/react/24/solid'
 import { PencilIcon } from '@heroicons/react/24/solid'
-import { useEffect } from 'react';
 import { useState } from 'react'
 
 export default function FeedWriteQue({title, mandatory = false, guide, name, value, explain, target}) {

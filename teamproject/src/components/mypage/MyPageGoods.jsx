@@ -1,5 +1,4 @@
 import tw from "tailwind-styled-components"
-import image from "../../image/keyboard.jpg"
 
 export default function MypageGoods() {
   const Item = tw.li`

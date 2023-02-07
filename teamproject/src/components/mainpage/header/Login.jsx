@@ -28,30 +28,14 @@ export default function Login({}) {
         console.log(data, "d")
         localStorage.setItem("userId", data.id)
         localStorage.setItem("username", data.username)
-/*         fetch("http://52.194.161.226:8080/api/join", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              id: data.id,
-              email: data.email
-            }),
-          })
-          .then((response) => response.json())
-          .then((data) => {
-            localStorage.setItem("webAccessToken", data.data.token)
-            localStorage.setItem("webrefreshToken", data.data.refreshToken)
-          }
-        ) */
       })
     }
 
     getAccessToken()
 
-/*     setTimeout(() => {
+    setTimeout(() => {
       history.back()
-    }, [1500]) */
+    }, [1500])
   }
   }, [])
 }

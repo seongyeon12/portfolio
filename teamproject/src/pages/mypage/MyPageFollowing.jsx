@@ -7,19 +7,7 @@ import Load from '@image/Load.png'
 export default function MypageFollowing() {
   const [follower, setFollower] = useState([])
   const [target, setTarget] = useState(null);
-  /* 나중에 삭제(이미지스타일) */
-  const imgStyle = "w-24 h-24 bg-gray-200 text-center mr-6"
-/* 
-  useEffect(() => {
-		const fetchData = async() => {
-          const res = await fetch('http://localhost:3000/user?_limit=9');
-          const result = res.json();
-          return result;
-        }	
-        
-        fetchData().then(res => setFollower(res));
-    }, []); */
-
+  
   // 데이터 페칭 함수
   // const page = 1;
   const fetchData = async () => {
