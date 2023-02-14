@@ -4,6 +4,13 @@
 원본 팀프로젝트 깃허브 링크
 - https://github.com/minji99710/devgram-frontend 
 
+## 실행어
+1. cd teamproject
+2. cd json-server, <br>
+  json-server --watch db2.json --port 3001
+3. cd server, <br> npm start
+4. npm run dev
+
 ### 프로젝트 설명
 
 기획 배경 
