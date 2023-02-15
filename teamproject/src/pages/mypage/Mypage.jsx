@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Link, Route, Routes, Router } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import MypageProfile from '@components/mypage/MyPageProfile'
 import MypageTitle from '@components/mypage/MyPageTitle'

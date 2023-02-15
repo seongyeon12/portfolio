@@ -18,6 +18,9 @@ import MyPageLike from "@pages/mypage/MyPageLike";
 import MypageUserFeed from "@pages/mypage/MypageUserFeed";
 import MyPageFollowing from "@pages/mypage/MyPageFollowing";
 
+/* 임시 메인페이지 */
+import TmpMain from "@pages/tmp/tmpMain"
+
 import Login from "@components/mainpage/header/Login";
 
 function App() {
@@ -31,7 +34,7 @@ function App() {
                 <QueryClientProvider client={client}>
                     <Routes>
                         {/* 메인 페이지 */}
-                        <Route path="/" element={<MainPage />} />
+                        <Route path="/" element={<TmpMain />} />
                         <Route path="/admin/*" element={<AdminPage />} />
                         {/* 피드 페이지 */}
                         <Route path="/social/feed" element={<FeedMainPage />} />
