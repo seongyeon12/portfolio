@@ -43,7 +43,7 @@ export default function ProductsDetailReview() {
 
   return (
     <>
-    <hr className='mt-3 mb-3 border-black'/>
+    <hr className='mt-3 mb-3 bg-gray-500 border-gray-500'/>
     <div className="product-container">
 
       <div className="btn-container flex justify-between">

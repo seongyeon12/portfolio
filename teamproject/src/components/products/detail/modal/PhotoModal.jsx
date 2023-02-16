@@ -30,11 +30,11 @@ export default function PhotoModal({length, Open, starLength, userid, day, revie
       <div>
         <div className="fixed z-50 w-4/5 h-3/5 border-gray-200 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-md">
           <div className="top flex text-gray-100 justify-between ml-[10%] mr-[10%]">
-            <h1 className='text-5xl mb-3'>포토 리스트 {tmp + 1}/{length}</h1>
+            <h1 className='text-5xl mb-3'>포토 리스트 {Number(tmp)}/{length}</h1>
             <XMarkIcon className='w-10 cursor-pointer' onClick={() => Open(false)}/>
           </div>
           <div className="w-5/5 h-full flex justify-between">
-            <ChevronLeftIcon className='w-[10%] cursor-pointer text-white' onClick={() => num < 1 ? null : handlerBtnLeft()}/>
+            <ChevronLeftIcon className='w-[10%] cursor-pointer text-white' onClick={() => num <= 1 ? null : handlerBtnLeft()}/>
             <div className="content w-4/5 flex bg-white rounded-md overflow-hidden">
               <div className="img-box bg-keyboard-img w-1/2 box-border rounded-md  border-[1px] border-gray-100">
               </div>
@@ -63,7 +63,7 @@ export default function PhotoModal({length, Open, starLength, userid, day, revie
                 </div>
               </div>
             </div>
-          <ChevronRightIcon className='w-[10%] cursor-pointer text-white' onClick={() => num === length - 1 ? null : 
+          <ChevronRightIcon className='w-[10%] cursor-pointer text-white' onClick={() => num === length ? null : 
             handlerBtnRight()}/>
           </div>
         </div>

@@ -17,7 +17,6 @@ export default function ProductsDatailView() {
   function handlerPhotoLi(num) {
     setReviewNum(num)
     setphotoModalOpen(true)
-
   }
 
   useEffect(() => {
@@ -46,6 +45,7 @@ export default function ProductsDatailView() {
 
   return (
     <>
+    {/* 모달 뒤 검은 화면 */}
     {photoModalOpen ? <div className="fixed w-full h-full bg-black z-40 opacity-70"></div> : null}
 
     {/* nav */}
@@ -64,8 +64,8 @@ export default function ProductsDatailView() {
       /> : null}
 
       {/* 포토 칸 (리뷰 사진 리스트) */}
-      <div className="photo-container md:block hidden">
-            <p>포토 55건</p>
+      <div className="photo-container md:block hidden mt-6">
+            <p className='mb-3'>포토 55건</p>
             {reviews.length > 0 ? <ul className='flex gap-[1%]'>
                 {reviews.slice(0, 9).map(review => (
                   <li className='basis-[10.3%] h-32 bg-keyboard-img rounded shadow-md cursor-pointer' id={review.id} onClick={(e) => handlerPhotoLi(e.target.id)}>
@@ -73,13 +73,14 @@ export default function ProductsDatailView() {
                 ))}
               </ul> : null}
           </div>
+
       {/* 모달창: 이미지 누르면 맞춰서 나옴 */}
       {reviews.length > 0 && photoModalOpen ? <PhotoModal 
         Open={setphotoModalOpen}
-        review={reviews[reviewNum].review}
-        starLength={reviews[reviewNum].star}
-        userid={reviews[reviewNum].userid}
-        day={reviews[reviewNum].day}
+        review={reviews[reviewNum - 1].review}
+        starLength={reviews[reviewNum - 1].star}
+        userid={reviews[reviewNum - 1].userid}
+        day={reviews[reviewNum - 1].day}
         length={reviews.length}
         num={reviewNum}
         count={setReviewNum}

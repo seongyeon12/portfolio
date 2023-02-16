@@ -3,7 +3,7 @@ import { HeartIcon } from '@heroicons/react/24/solid'
 import tw from "tailwind-styled-components"
 
 export default function ProductsDetailIntro({
-  title, category_Seq, rating, like_Count, price
+  title, category_Seq, price
 }) {
   const Btn = tw.button`
   text-center
