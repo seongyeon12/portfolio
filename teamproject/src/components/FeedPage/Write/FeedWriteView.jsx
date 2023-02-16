@@ -144,23 +144,6 @@ export default function FeedWriteView() {
         <div className="last">
           <FeedWriteQue title="마지막" guide="마지막으로 적으실 말을 자유롭게 작성해주세요." name="content" explain="마지막으로 자유롭게 내용"/>
         </div>
-        
-        <div className="last">
-
-          {/* 태그 */}
-          <div className="tag-box mt-6">
-            <h2>태그 추가</h2>
-            <ul className='flex mb-1'>
-              {tagList.map(tag => (
-                <li className='border-2 p-1 cursor-pointer hover:bg-gray-200 mr-2 rounded-md'>{tag}</li>
-              ))}
-            </ul>
-            <input type="text" className='border-2 focus:outline-0 bg-white' id="tagInput"/>
-            <button className='btn btn-sm ml-3' onClick={() => handlerTagBtn()} type="button">추가</button>
-            {tagList.length === 0 ? null :  <button className='btn btn-sm ml-3' onClick={() => settagList([])}>전체 삭제</button>}
-          </div>
-        </div>
-        <input type="hidden" name='tagNames' value={tagList} />
 
         {/* 제목 */}
         <div className="title mt-6">
