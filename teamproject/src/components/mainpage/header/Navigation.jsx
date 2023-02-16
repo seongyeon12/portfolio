@@ -2,8 +2,7 @@ import React from "react";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 export default function Navigation() {
-    function logout() {
-    }
+    const CLIENT_ID = "b3e8e3aa865dfc9d1d08"
 
     function loginWithGithub() {
         window.location.assign(`https://github.com/login/oauth/authorize?client_id=` + CLIENT_ID)
@@ -45,7 +44,6 @@ export default function Navigation() {
                                     <button
                                     className="btn btn-xs btn-outline rounded-full" onClick={() => {
                                         localStorage.clear(); 
-                                        logout()
                                         location.reload();
                                     }}>
                                         로그아웃

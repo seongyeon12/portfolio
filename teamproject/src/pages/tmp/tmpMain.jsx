@@ -16,6 +16,7 @@ export default function TmpMain() {
     rounded 
     bg-gray-700
     text-white
+    shadow-xl
     ">
       <div className="deco flex justify-between w-20">
         <div className="w-5 h-4 bg-red-500 rounded-full"></div>
